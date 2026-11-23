@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Média de Idades</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="card">
+      <h1>Média de idades</h1>
+
+      <form action="calculaMedia.php" method="post">
+        <label for="idade1">Idade da pessoa 1:</label>
+        <input type="number" name="idade1" id="idade1" min="0" max="120" step="1" required />
+
+        <label for="idade2">Idade da pessoa 2:</label>
+        <input type="number" name="idade2" id="idade2" min="0" max="120" step="1" required />
+
+        <label for="idade3">Idade da pessoa 3:</label>
+        <input type="number" name="idade3" id="idade3" min="0" max="120" step="1" required />
+
+        <button type="submit">Calcular média</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </main>
+  </body>
+</html>
